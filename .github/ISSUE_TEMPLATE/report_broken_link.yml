@@ -1,0 +1,39 @@
+name: Report a broken link
+description: Report a link in the repository that is dead, redirects incorrectly, or no longer points to the intended resource.
+title: "[Broken link]: "
+labels:
+  - broken-link
+  - triage
+body:
+  - type: input
+    id: file_path
+    attributes:
+      label: File containing the broken link
+      description: Repository path of the file that contains the broken link.
+      placeholder: e.g. resources/articles.md
+    validations:
+      required: true
+  - type: input
+    id: broken_url
+    attributes:
+      label: Broken URL
+      description: The URL that is currently broken or misdirected.
+      placeholder: https://example.com/old-path
+    validations:
+      required: true
+  - type: input
+    id: replacement_url
+    attributes:
+      label: Suggested replacement URL
+      description: Optional. If you know the new canonical URL, please share it here.
+      placeholder: https://example.com/new-path
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+      description: Optional. Any context — for example, the resource was renamed, the project was archived, or the domain changed hands.
+      placeholder: e.g. The project moved to a new domain in March 2026.
+    validations:
+      required: false

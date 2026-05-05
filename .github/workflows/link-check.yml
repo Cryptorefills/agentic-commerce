@@ -1,0 +1,42 @@
+# Link Check Workflow
+# Validates all markdown links in the repository using lychee.
+# Runs on PRs touching markdown, weekly on schedule, and on-demand.
+# On scheduled failures, opens an issue summarizing broken links.
+name: Link Check
+
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+  schedule:
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run lychee link checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --accept 200,204,301,302 --max-retries 2 './**/*.md'
+          fail: true
+
+      - name: Create issue on scheduled failure
+        if: failure() && github.event_name == 'schedule'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: 'Broken links detected by scheduled lychee run'
+          content-filepath: ./lychee/out.md
+          labels: |
+            bug
+            documentation
+            broken-links

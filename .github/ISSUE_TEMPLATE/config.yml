@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Cryptorefills website
+    url: https://www.cryptorefills.com
+    about: Learn about the maintainer of this repository and our production agentic commerce stack.
+  - name: Report a security issue
+    url: mailto:security@cryptorefills.com
+    about: Please report security vulnerabilities privately by email — do not open a public issue.

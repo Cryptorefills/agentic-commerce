@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+title: "Cryptorefills · Agentic Commerce — The Production Reference"
+message: "If you reference this work, please cite it as below."
+type: software
+abstract: >
+  An open reference for the agentic commerce stack — protocols (ACP, AP2, UCP, MPP),
+  stablecoin payment rails (x402, L402, agentic card-network tokens), agent context
+  (MCP, Agent Skills, A2A), and the production merchant playbooks the specs leave
+  out (refunds, multi-chain settlement, catalog discovery at scale, fraud, tax,
+  delivery semantics). Maintained by Cryptorefills.
+authors:
+  - name: "Cryptorefills"
+    website: "https://www.cryptorefills.com"
+  - family-names: "Landi"
+    given-names: "Simonluca"
+    affiliation: "Cryptorefills"
+    alias: "simonlucalandi"
+  - alias: "CGRDMZ"
+    affiliation: "Cryptorefills"
+  - alias: "matsveenman"
+    affiliation: "Cryptorefills"
+repository-code: "https://github.com/cryptorefills/agentic-commerce"
+url: "https://www.cryptorefills.com"
+license: CC0-1.0
+license-url: "https://creativecommons.org/publicdomain/zero/1.0/"
+keywords:
+  - agentic commerce
+  - agentic payments
+  - agent skills
+  - stablecoin payments
+  - x402
+  - L402
+  - ACP
+  - AP2
+  - UCP
+  - MPP
+  - MCP
+  - A2A
+  - merchant playbooks
+  - crypto payments
+  - AI agents
+  - machine-to-machine commerce
+date-released: 2026-05-01

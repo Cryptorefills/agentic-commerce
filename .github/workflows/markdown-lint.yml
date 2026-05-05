@@ -1,0 +1,32 @@
+# Markdown Lint Workflow
+# Lints markdown files for style and formatting consistency
+# using markdownlint-cli2. Runs on PRs and pushes to main.
+name: Markdown Lint
+
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*.md'
+
+permissions:
+  contents: read
+
+jobs:
+  markdown-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run markdownlint-cli2
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: |
+            **/*.md
+            !node_modules/**
+            !examples/**/node_modules/**

@@ -1,0 +1,39 @@
+name: Update an existing resource
+description: Propose an update to an entry already listed in the repository (renamed, moved, scope changed, version bumped, etc.).
+title: "[Update resource]: "
+labels:
+  - resource
+  - update
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template when an existing entry needs to be revised. For broken links, please use the **Report a broken link** template instead.
+  - type: input
+    id: existing_path
+    attributes:
+      label: Existing path or entry
+      description: Path to the file containing the entry, or the exact line as it appears today.
+      placeholder: e.g. protocols/README.md — "Agentic Commerce Protocol (ACP)"
+    validations:
+      required: true
+  - type: textarea
+    id: what_changed
+    attributes:
+      label: What changed and what should the entry now say?
+      description: Describe the change and provide the proposed replacement text.
+      placeholder: |
+        Current: ...
+        Proposed: ...
+        Reason: ...
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source backing the change
+      description: Official URL or public artifact that confirms the update.
+      placeholder: https://example.com/changelog
+    validations:
+      required: true

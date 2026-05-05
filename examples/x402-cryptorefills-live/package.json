@@ -1,0 +1,19 @@
+{
+  "name": "@agentic-commerce/example-x402-cryptorefills-live",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Inspect the real public Cryptorefills x402 server end-to-end without spending money. Manifest, real catalog with USDC pricing, real 402 PAYMENT-REQUIRED inspection. No signing, no payment.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "start": "tsx client.ts",
+    "manifest": "MODE=manifest tsx client.ts",
+    "catalog": "MODE=catalog tsx client.ts",
+    "inspect": "MODE=inspect-402 tsx client.ts"
+  },
+  "devDependencies": {
+    "@types/node": "20.17.10",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2"
+  }
+}

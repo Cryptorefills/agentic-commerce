@@ -1,0 +1,48 @@
+name: Suggest a use case
+description: Propose a production agentic-commerce use case that current protocols and rails do not adequately cover.
+title: "[Use case]: "
+labels:
+  - use-case
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We add use cases that reflect real merchant or agent operations. Speculative scenarios without public references are unlikely to be accepted.
+  - type: input
+    id: title
+    attributes:
+      label: Use case title
+      description: A concise title for the use case.
+      placeholder: e.g. Refunding a partially redeemed gift card from an agent session
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: Describe the operational problem in production terms — what happens, who is involved, and why it is hard.
+      placeholder: |
+        Context:
+        Trigger:
+        What goes wrong today:
+    validations:
+      required: true
+  - type: textarea
+    id: why_protocols_dont_cover
+    attributes:
+      label: Why current protocols and rails do not cover this
+      description: Explain which specs were considered (e.g. ACP, AP2, x402, L402) and where they fall short for this case.
+      placeholder: |
+        Protocol(s) considered:
+        Gap:
+    validations:
+      required: true
+  - type: input
+    id: public_reference
+    attributes:
+      label: Public reference
+      description: Link to a public artifact (post, doc, repo, talk) that grounds the use case in reality.
+      placeholder: https://example.com/post
+    validations:
+      required: true

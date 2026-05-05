@@ -1,0 +1,78 @@
+name: Add a resource
+description: Propose a new entry (protocol, rail, use case, playbook, example, article, video, etc.) for the curated reference.
+title: "[Add resource]: "
+labels:
+  - resource
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing. This repository links only to **official, maintainer-owned** sources and uses neutral, factual descriptions. Please review [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md) before submitting.
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+      description: The canonical name of the resource as the owners refer to it.
+      placeholder: e.g. Agentic Commerce Protocol (ACP)
+    validations:
+      required: true
+  - type: input
+    id: official_url
+    attributes:
+      label: Official URL (maintainer-owned)
+      description: A URL hosted on the resource owner's primary domain. No mirrors, no aggregators.
+      placeholder: https://example.com/spec
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which section of the repository does this resource belong in?
+      options:
+        - Protocol
+        - Payment rail
+        - Use case
+        - Playbook
+        - Example
+        - Article
+        - Video
+        - Podcast
+        - Book
+        - Course
+        - Conference
+        - Newsletter
+        - Tool
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: One-line neutral description
+      description: A single sentence that describes what the resource is. No marketing language, no superlatives.
+      placeholder: e.g. Open specification for agent-to-merchant commerce flows over HTTP.
+    validations:
+      required: true
+  - type: input
+    id: production_evidence
+    attributes:
+      label: Public artifact backing the entry
+      description: Optional. Link to a post, repository, doc, or other public artifact that backs the entry.
+      placeholder: https://example.com/blog/announcement
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Submission checklist
+      description: Please confirm all of the following before submitting.
+      options:
+        - label: I am linking to an official source
+          required: true
+        - label: No marketing language
+          required: true
+        - label: Alphabetized within section if applicable
+          required: true
+        - label: I have read CONTRIBUTING.md
+          required: true

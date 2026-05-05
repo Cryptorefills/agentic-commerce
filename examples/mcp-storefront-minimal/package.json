@@ -1,0 +1,20 @@
+{
+  "name": "@agentic-commerce/example-mcp-storefront-minimal",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cryptorefills-style MCP storefront demo: search, quote, order, status over a multi-category mock catalog (gift cards, mobile top-ups, eSIMs).",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "start": "tsx server.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "20.17.10",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2"
+  }
+}

@@ -1,0 +1,31 @@
+# Awesome Lint Workflow
+# Validates README.md against the awesome-lint ruleset.
+# Runs on PRs that modify the README or this workflow file.
+# Marked continue-on-error since awesome-lint is opinionated and
+# may flag legitimate intentional formatting decisions.
+name: Awesome Lint
+
+on:
+  pull_request:
+    paths:
+      - 'README.md'
+      - '.github/workflows/awesome-lint.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  awesome-lint:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run awesome-lint
+        run: npx --yes awesome-lint README.md

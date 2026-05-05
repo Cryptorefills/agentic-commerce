@@ -1,0 +1,37 @@
+# CODEOWNERS for cryptorefills/agentic-commerce
+#
+# This file defines individuals responsible for code in this repository.
+# When a pull request modifies a path matched below, the listed owners are
+# automatically requested for review.
+#
+# Order matters: the LAST matching pattern takes precedence. The most specific
+# pattern that matches a given file is the one whose owners are requested.
+#
+# Syntax reference:
+#   https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-security/managing-repository-settings/about-code-owners
+#
+# Maintainer: Cryptorefills (https://www.cryptorefills.com)
+
+# Global fallback — applies when no later pattern matches
+* @simonlucalandi
+
+# Protocol, rail, and use-case curation
+/protocols/             @simonlucalandi @CGRDMZ
+/rails/                 @simonlucalandi @CGRDMZ
+/use-cases/             @simonlucalandi @CGRDMZ
+
+# Playbooks
+/merchant-playbooks/    @simonlucalandi @matsveenman
+/agent-playbooks/       @simonlucalandi @CGRDMZ
+
+# Code samples and runnable examples
+/examples/              @simonlucalandi @CGRDMZ @matsveenman
+
+# Reference and supporting material
+/comparison/            @simonlucalandi
+/resources/             @simonlucalandi
+/docs/                  @simonlucalandi
+
+# Top-level documents
+README.md               @simonlucalandi
+CONTRIBUTING.md         @simonlucalandi

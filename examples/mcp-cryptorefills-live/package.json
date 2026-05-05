@@ -1,0 +1,20 @@
+{
+  "name": "@agentic-commerce/example-mcp-cryptorefills-live",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Live MCP wrapper that proxies the public Cryptorefills MCP server with safety guards. Read-only catalog plus validate/create order; no payment.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "start": "tsx server.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "20.17.10",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2"
+  }
+}
