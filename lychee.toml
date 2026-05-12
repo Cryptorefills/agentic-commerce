@@ -1,0 +1,46 @@
+# Lychee link checker configuration
+# https://lychee.cli.rs/usage/config/
+
+# HTTP status codes treated as successful.
+# 403 is included because many enterprise sites (visa.com, openai.com,
+# fatf-gafi.org, etc.) reject non-browser user-agents but the pages exist.
+# 202/206 cover sites that return non-200 success codes (e.g., eur-lex.europa.eu).
+# 429 covers rate-limited responses on transient runs.
+accept = [200, 202, 203, 206, 301, 302, 403, 429]
+
+# Retry transient failures (timeouts, 5xx) before reporting a broken link.
+max_retries = 3
+retry_wait_time = 5
+
+# Generous timeout for slow regulator/bank sites.
+timeout = 30
+
+# Use a realistic browser UA to reduce false-positive 403s.
+user_agent = "Mozilla/5.0 (compatible; lychee-link-check/0.18; +https://github.com/lycheeverse/lychee)"
+
+# Skip URLs that are well-known to block automated checkers or are otherwise
+# unreliable to verify from CI. Each entry is a regex matched against the URL.
+exclude = [
+    # Bot-hostile hosts (return 403 to non-browser UAs, but pages are live)
+    "^https?://(www\\.)?openai\\.com",
+    "^https?://(www\\.)?fatf-gafi\\.org",
+    "^https?://developer\\.americanexpress\\.com",
+    "^https?://(www\\.)?strike\\.me",
+    "^https?://importai\\.substack\\.com",
+    "^https?://(www\\.)?theblock\\.co",
+    "^https?://(www\\.)?transportation\\.gov",
+    "^https?://(www\\.)?ncsl\\.org",
+    "^https?://(www\\.)?fincen\\.gov",
+    "^https?://docs\\.cdp\\.coinbase\\.com",
+    "^https?://(www\\.)?coinbase\\.com/developer",
+
+    # Intermittent timeouts / connection refused from GitHub Actions runners
+    "^https?://(www\\.)?swift\\.com",
+    "^https?://(www\\.)?no-priors\\.com",
+    "^https?://(www\\.)?gsma\\.com",
+
+    # Social profile URLs (always 403/auth-walled)
+    "^https?://(www\\.)?linkedin\\.com",
+    "^https?://(www\\.)?x\\.com",
+    "^https?://twitter\\.com",
+]

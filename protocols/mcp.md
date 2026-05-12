@@ -14,7 +14,7 @@ The spec is open and ecosystem-driven. Anthropic authors the canonical SDKs (Typ
 
 - All major LLM clients (Claude, ChatGPT, Cursor, Cline, Continue, Zed) speak MCP.
 - **Storefront MCP servers are becoming the default agent-facing surface for commerce.** Shopify ships an official storefront MCP server. Stripe exposes its API as MCP. Cloudflare Agents SDK includes first-class MCP support.
-- The [Streamable HTTP transport](https://modelcontextprotocol.io/specification/basic/transports) supersedes the older SSE-only transport; stdio remains canonical for local servers.
+- The [Streamable HTTP transport](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports) supersedes the older SSE-only transport; stdio remains canonical for local servers.
 - Microsoft, GitHub, Linear, Notion, Figma, and most developer-tooling vendors ship first-party MCP servers.
 
 ## What it does

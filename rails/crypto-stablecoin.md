@@ -218,8 +218,8 @@ Multi-issuer (USDC + USDT + DAI + EURC) and multi-chain (Base + Ethereum + Tron 
 - Coinbase, *x402 specification* — <https://www.x402.org/>
 - Coinbase, *Base network docs* — <https://docs.base.org/>
 - Solana Labs, *Confirmation and finality* — <https://docs.solana.com/cluster/commitments>
-- Tron Foundation, *Consensus and finality* — <https://tronprotocol.github.io/documentation-en/introduction/dpos/>
-- Polygon Labs, *PoS finality* — <https://docs.polygon.technology/pos/concepts/heimdall/checkpoint/>
+- Tron Foundation, *Consensus and finality* — <https://developers.tron.network/docs>
+- Polygon Labs, *PoS finality* — <https://docs.polygon.technology/pos/architecture/heimdall/>
 - Ethereum Foundation, *Finality* — <https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/#finality>
 - EIP-712, *Typed structured data hashing and signing* — <https://eips.ethereum.org/EIPS/eip-712>
 - EIP-2612, *permit* — <https://eips.ethereum.org/EIPS/eip-2612>

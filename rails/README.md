@@ -146,8 +146,8 @@ The bigger cross-rail topics — multi-chain settlement reconciliation, refund d
 - Tether, *USDT* — <https://tether.to/>
 - Sky (formerly MakerDAO), *DAI* — <https://sky.money/>
 - Lightning Labs, *Lightning Network* — <https://lightning.network/>
-- Visa, *Trusted Agent Protocol* — <https://corporate.visa.com/en/products/agentic-commerce.html>
-- Mastercard, *Agent Pay* — <https://www.mastercard.com/news/press/2025/april/mastercard-unveils-agent-pay/>
+- Visa, *Trusted Agent Protocol* — <https://corporate.visa.com/en/products/intelligent-commerce.html>
+- Mastercard, *Agent Pay* — <https://newsroom.mastercard.com/news/press/2025/april/mastercard-unveils-agent-pay-pioneering-agentic-payments-technology-to-power-commerce-in-the-age-of-ai/>
 - American Express, *Agentic commerce* — <https://www.americanexpress.com/>
 - ECB, *SEPA Instant Credit Transfer* — <https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html>
 - Federal Reserve, *FedNow* — <https://www.frbservices.org/financial-services/fednow>

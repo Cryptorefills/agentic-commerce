@@ -24,7 +24,7 @@ A multi-layer collaboration. Each row is a peer contributing a piece — protoco
 |---|---|---|
 | [OpenAI](https://openai.com) | Commerce protocol | [ACP](./protocols/acp.md) co-author · ChatGPT Instant Checkout |
 | [Stripe](https://stripe.com) | Commerce protocol · payments | [ACP](./protocols/acp.md) co-author · Shared Payment Tokens · [MPP](./protocols/mpp.md) · Stripe-on-Base x402 |
-| [Google](https://cloud.google.com/agentic-commerce) | Commerce protocol · agent comms | [AP2](./protocols/ap2.md) · [UCP](./protocols/ucp.md) · [A2A](./protocols/a2a.md) |
+| [Google](https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-payments-protocol-ap2) | Commerce protocol · agent comms | [AP2](./protocols/ap2.md) · [UCP](./protocols/ucp.md) · [A2A](./protocols/a2a.md) |
 | [Anthropic](https://www.anthropic.com) | Agent context | [MCP](./protocols/mcp.md) · Claude · Agent Skills runtime |
 | [Coinbase](https://www.coinbase.com) | Stablecoin rail | [x402](./protocols/x402.md) · USDC infrastructure · Base settlement |
 | [Cloudflare](https://www.cloudflare.com) | Agent infrastructure | Agents SDK · x402 support |

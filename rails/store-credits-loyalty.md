@@ -153,7 +153,7 @@ For agents this matters because the agent must read the redemption rate at quote
 - Coinbase, *x402 specification* — <https://www.x402.org/>
 - Cryptorefills gift-card delivery — <https://www.cryptorefills.com/>
 - US state gift-card regulations (varies; reference NCSL) — <https://www.ncsl.org/financial-services/gift-card-and-gift-certificate-laws>
-- EU Electronic Money Directive (2EMD) — <https://finance.ec.europa.eu/regulation-and-supervision/financial-services-legislation/implementing-and-delegated-acts/electronic-money-directive_en>
+- EU Electronic Money Directive (2EMD) — <https://finance.ec.europa.eu/regulation-and-supervision/financial-services-legislation/implementing-and-delegated-acts_en>
 - FinCEN, *Stored value and prepaid access* — <https://www.fincen.gov/>
 - FATF, *Guidance on prepaid cards and stored value* — <https://www.fatf-gafi.org/>
 - Cryptorefills jurisdiction metadata playbook — [/merchant-playbooks/jurisdiction-and-tax-metadata.md](../merchant-playbooks/jurisdiction-and-tax-metadata.md)

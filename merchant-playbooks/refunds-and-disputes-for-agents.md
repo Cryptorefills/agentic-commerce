@@ -161,4 +161,4 @@ Detect, monitor, and act on:
 - Coinbase x402 specification — <https://www.x402.org/>
 - Google Agent Payments Protocol (AP2) mandates — <https://github.com/google-agentic-commerce/AP2>
 - USDC issuer policy and freeze controls — <https://www.circle.com/usdc>
-- AP2 dispute extension drafts — <https://github.com/google-agentic-commerce/AP2/tree/main/specifications>
+- AP2 dispute extension drafts — <https://github.com/google-agentic-commerce/AP2/tree/main>

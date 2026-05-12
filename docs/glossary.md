@@ -6,7 +6,7 @@ This is the canonical glossary for the agentic commerce stack as it ships in 202
 
 ### A2A — Agent-to-Agent Protocol
 
-Open spec from [Google](https://google.github.io/A2A/) for one agent to discover, authenticate, and transact with another agent; the AP2 mandate model layers on top.
+Open spec from [Google](https://a2a-protocol.org/latest/) for one agent to discover, authenticate, and transact with another agent; the AP2 mandate model layers on top.
 
 ### ACP — Agentic Commerce Protocol
 
@@ -14,7 +14,7 @@ Open spec from [OpenAI and Stripe](https://www.agenticcommerce.dev/) standardizi
 
 ### Acquirer
 
-The merchant's bank in a card transaction; receives the authorization request from the merchant and forwards it to the [card network](https://www.visa.com/about-visa/our-business/visanet.html) for routing to the issuer.
+The merchant's bank in a card transaction; receives the authorization request from the merchant and forwards it to the [card network](https://corporate.visa.com/en/products/intelligent-commerce.html) for routing to the issuer.
 
 ### Agent identity
 
@@ -22,11 +22,11 @@ A cryptographic identifier (typically a public key, sometimes wrapped in a [veri
 
 ### Agent Skills
 
-Spec from [Anthropic](https://www.anthropic.com/news/agent-skills) (and [agentskills.io](https://agentskills.io)) describing how an agent loads task-specific instructions, tools, and resources at runtime; adopted by Claude Code, Cursor, and others.
+Spec from [Anthropic](https://claude.com/blog/skills) (and [agentskills.io](https://agentskills.io)) describing how an agent loads task-specific instructions, tools, and resources at runtime; adopted by Claude Code, Cursor, and others.
 
 ### Agentic token
 
-A network-issued payment credential that carries agent context (agent identity, mandate scope, intent hash) alongside the card number; see [Visa TAP](https://corporate.visa.com/en/products/trusted-agent-protocol.html), [Mastercard Agent Pay](https://www.mastercard.com/news/press/2025/april/mastercard-unveils-agent-pay/), and Amex agentic tokens.
+A network-issued payment credential that carries agent context (agent identity, mandate scope, intent hash) alongside the card number; see [Visa TAP](https://corporate.visa.com/en/products/intelligent-commerce.html), [Mastercard Agent Pay](https://newsroom.mastercard.com/news/press/2025/april/mastercard-unveils-agent-pay-pioneering-agentic-payments-technology-to-power-commerce-in-the-age-of-ai/), and Amex agentic tokens.
 
 ### AP2 — Agent Payments Protocol
 
@@ -66,7 +66,7 @@ Visa, Mastercard, American Express, Discover, JCB, UnionPay; the routing fabric 
 
 ### Chargeback
 
-A reversal initiated by the issuer at the cardholder's request, governed by [card-network rules](https://usa.visa.com/support/consumer/protection.html); has no native equivalent in stablecoin rails.
+A reversal initiated by the issuer at the cardholder's request, governed by [card-network rules](https://www.visa.com/en-us/personal/security.html); has no native equivalent in stablecoin rails.
 
 ### CVV / CVC
 
@@ -256,7 +256,7 @@ A token whose value tracks a reference asset, typically USD or EUR; **the agent-
 
 ### TAP — Trusted Agent Protocol
 
-[Visa's spec](https://corporate.visa.com/en/products/trusted-agent-protocol.html) for agentic card transactions, embedding agent identity and intent metadata into the EMV token flow.
+[Visa's spec](https://corporate.visa.com/en/products/intelligent-commerce.html) for agentic card transactions, embedding agent identity and intent metadata into the EMV token flow.
 
 ## U
 

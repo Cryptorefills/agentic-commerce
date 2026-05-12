@@ -152,7 +152,7 @@ type AgentScope = {
 ## References
 
 - Google AP2 specification — <https://github.com/google-agentic-commerce/AP2>
-- AP2 mandate types and verification — <https://github.com/google-agentic-commerce/AP2/tree/main/specifications>
+- AP2 mandate types and verification — <https://github.com/google-agentic-commerce/AP2/tree/main>
 - EIP-712: typed structured data hashing and signing — <https://eips.ethereum.org/EIPS/eip-712>
 - W3C Verifiable Credentials Data Model — <https://www.w3.org/TR/vc-data-model-2.0/>
 - Decentralized Identifiers (DIDs) — <https://www.w3.org/TR/did-core/>

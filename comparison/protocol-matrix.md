@@ -59,7 +59,7 @@ A few patterns are worth calling out.
 - A `yes` for authorization (AP2 mandates) does not eliminate misuse risk. Mandates can be over-scoped, refresh tokens can be replayed, and verifiable credentials can be issued by an under-vetted authority. Defenders should pin scopes tightly, log every mandate redemption, and rotate credentials.
 - A `partial` for refunds is worse than a clear `no`. Partial coverage means some flows reverse cleanly and some do not — and the fault line is rarely documented. Encode your refund policy in your receipts so the agent and the human both know what is reversible.
 
-[^acp]: Spec hub — <https://www.agenticcommerce.dev/>; reference repo — <https://github.com/agenticcommerce/agentic-commerce-protocol>.
+[^acp]: Spec hub — <https://www.agenticcommerce.dev/>; reference repo — <https://github.com/agentic-commerce-protocol/agentic-commerce-protocol>.
 [^ap2]: AP2 announcement and spec — <https://github.com/google-agentic-commerce/AP2>; partner list at launch (Sept 2025).
 [^ucp]: Universal Commerce Protocol — Google + Shopify announcement (2025); see Shopify storefront MCP integration docs.
 [^mpp]: Machine Payments Protocol — Tempo + Stripe spec; early-stage as of April 2026.

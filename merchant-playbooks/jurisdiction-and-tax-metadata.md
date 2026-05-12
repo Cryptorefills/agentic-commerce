@@ -150,7 +150,7 @@ The metadata is per-SKU, not per-brand. Two denominations of the same gift card 
 - FATF VASP guidance — <https://www.fatf-gafi.org/en/topics/Virtual-assets.html>
 - OFAC sanctions search and SDN list — <https://sanctionssearch.ofac.treas.gov/>
 - EU consumer rights directive (cooling-off) — <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32011L0083>
-- EU VAT for digital services (place of supply) — <https://taxation-customs.ec.europa.eu/vat-digital-services_en>
+- EU VAT for digital services (place of supply) — <https://taxation-customs.ec.europa.eu/taxation/value-added-tax-vat_en>
 - US FinCEN prepaid access rule — <https://www.fincen.gov/resources/statutes-and-regulations/cfr/31-cfr-chapter-x>
 - ITU country code references for telecom and MSISDN — <https://www.itu.int/pub/T-SP-E.164D>
 - IATA Resolution 824 / fare rules for travel SKUs — <https://www.iata.org/>

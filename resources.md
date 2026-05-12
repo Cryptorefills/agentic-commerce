@@ -23,12 +23,12 @@ Curated reading, viewing, listening, and tooling for agentic commerce. Every lin
 ## Videos
 
 - [Anthropic dev livestreams](https://www.youtube.com/@anthropic-ai) — Anthropic / YouTube — Channel hosting MCP and Claude developer talks; specific episodes covering MCP commerce surfaces.
-- [Coinbase Developer Platform sessions](https://www.youtube.com/@CoinbaseDeveloper) — Coinbase / YouTube — Channel with x402 walkthroughs and Base agentic-payments demos.
+- [Coinbase Developer Platform sessions](https://www.youtube.com/@CoinbaseDeveloperPlatform) — Coinbase / YouTube — Channel with x402 walkthroughs and Base agentic-payments demos.
 - [Devcon talks](https://www.youtube.com/@EthereumFoundation) — Ethereum Foundation / YouTube — Devcon recordings; search for agent-payments and EIP-related sessions.
 - [Google Cloud Next sessions](https://cloud.withgoogle.com/next) — Google Cloud — Cloud Next session library; AP2 and Vertex agent sessions.
 - [OpenAI DevDay](https://www.youtube.com/@OpenAI) — OpenAI / YouTube — Channel hosting the DevDay keynote and developer sessions, including ACP and ChatGPT apps.
 - [Shopify Editions](https://www.shopify.com/editions) — Shopify — Shopify's biannual product showcase; agentic and storefront MCP content.
-- [Stripe Sessions](https://www.youtube.com/@StripeDevelopers) — Stripe Developers / YouTube — Stripe's developer keynotes including agentic commerce primitives.
+- [Stripe Sessions](https://www.youtube.com/@StripeDev) — Stripe Developers / YouTube — Stripe's developer keynotes including agentic commerce primitives.
 
 ## Podcasts
 
@@ -38,8 +38,8 @@ Curated reading, viewing, listening, and tooling for agentic commerce. Every lin
 - [Lex Fridman Podcast](https://lexfridman.com/podcast/) — Lex Fridman — Long-form interviews including AI-payments and stablecoin operator conversations.
 - [No Priors](https://www.no-priors.com/) — Sarah Guo & Elad Gil — AI investor podcast with regular agentic-commerce coverage.
 - [Practical AI](https://changelog.com/practicalai) — Changelog — Engineering-focused episodes on AI tooling, including MCP and agent infrastructure.
-- [The AI Agent Podcast](https://www.youtube.com/@theaiagentpodcast) — Independent — Episodes specifically on agent operations and commerce flows.
-- [The Stripe Podcast](https://stripe.com/podcast) — Stripe — Stripe's own podcast; episodes on agentic commerce primitives.
+- [The AI Agent Podcast](https://www.youtube.com/@aiagentpodcast) — Independent — Episodes specifically on agent operations and commerce flows.
+- [The Stripe Podcast](https://stripe.com/sessions) — Stripe — Stripe's own podcast; episodes on agentic commerce primitives.
 - [Unchained](https://unchainedcrypto.com/podcasts/) — Laura Shin — Crypto-payments and stablecoin coverage relevant to x402 and L402.
 
 ## Books
@@ -76,7 +76,7 @@ Curated reading, viewing, listening, and tooling for agentic commerce. Every lin
 ## Newsletters
 
 - [Ben Thompson — Stratechery](https://stratechery.com/) — Ben Thompson — Recurring strategy coverage of agent platforms, app stores, and payments.
-- [Bitcoin Optech](https://bitcoinops.org/en/newsletter/) — Bitcoin Optech — Weekly engineering newsletter; relevant for L402 and Lightning operators.
+- [Bitcoin Optech](https://bitcoinops.org/) — Bitcoin Optech — Weekly engineering newsletter; relevant for L402 and Lightning operators.
 - [Bytes by deeplearning.ai](https://www.deeplearning.ai/the-batch/) — DeepLearning.AI — Weekly AI digest; agent and tool-use coverage.
 - [Import AI](https://importai.substack.com/) — Jack Clark — Long-running AI policy and capability newsletter.
 - [Latent Space Newsletter](https://www.latent.space/) — swyx and Alessio — AI engineering newsletter to accompany the podcast.
@@ -88,7 +88,7 @@ Curated reading, viewing, listening, and tooling for agentic commerce. Every lin
 
 ## Tools
 
-- [ACP spec repository](https://github.com/agenticcommerce/agentic-commerce-protocol) — Agentic Commerce Protocol working group — OpenAPI / JSON Schema definitions and reference materials.
+- [ACP spec repository](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol) — Agentic Commerce Protocol working group — OpenAPI / JSON Schema definitions and reference materials.
 - [agentskills.io](https://agentskills.io) — Agent Skills working group — Spec hub for the Agent Skills format used by Claude Code, Cursor, and others.
 - [Anthropic SDK (Python)](https://github.com/anthropics/anthropic-sdk-python) — Anthropic — Python SDK for the Claude API; used in MCP host implementations.
 - [Anthropic SDK (TypeScript)](https://github.com/anthropics/anthropic-sdk-typescript) — Anthropic — TypeScript SDK for the Claude API.

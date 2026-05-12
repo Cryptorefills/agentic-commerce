@@ -47,7 +47,7 @@ ACP does **not** cover catalog ranking, refund semantics for digital goods, mult
 
 | Name | Link | Language |
 |---|---|---|
-| `agenticcommerce/agentic-commerce-protocol` | [github.com/agenticcommerce/agentic-commerce-protocol](https://github.com/agenticcommerce/agentic-commerce-protocol) | Spec (OpenAPI / JSON Schema) |
+| `agenticcommerce/agentic-commerce-protocol` | [github.com/agentic-commerce-protocol/agentic-commerce-protocol](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol) | Spec (OpenAPI / JSON Schema) |
 | Stripe ACP server primitives | [docs.stripe.com](https://docs.stripe.com) (search "Agentic Commerce") | Multi-language SDKs |
 | OpenAI ChatGPT Instant Checkout | [developers.openai.com/commerce](https://developers.openai.com/commerce) | Buyer / wallet side |
 | Shopify ACP integration | Shopify dev docs | Server-side |
@@ -149,7 +149,7 @@ Merchants implementing ACP own catalog metadata, quote semantics, refund pathway
 - Spec hub: <https://www.agenticcommerce.dev/>
 - OpenAI commerce docs: <https://developers.openai.com/commerce>
 - Stripe documentation: <https://docs.stripe.com>
-- Spec repository: <https://github.com/agenticcommerce/agentic-commerce-protocol>
+- Spec repository: <https://github.com/agentic-commerce-protocol/agentic-commerce-protocol>
 - ChatGPT Instant Checkout announcement (OpenAI blog, 2025)
 - Shopify storefront ACP integration (Shopify developer docs)
 - PayPal "Agent Ready" announcement (PayPal newsroom, 2025)

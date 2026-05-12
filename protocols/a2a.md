@@ -4,7 +4,7 @@ An open protocol for one autonomous agent to discover, authenticate, and delegat
 
 ## Maintainer
 
-[Google](https://developers.google.com/), originally announced at Google Cloud Next 2025 with 50+ launch partners. The specification is hosted at [google-a2a.github.io/A2A](https://google-a2a.github.io/A2A/) with reference implementations in the [`google-a2a`](https://github.com/google-a2a) GitHub organization. Governance has been transitioned toward an open ecosystem foundation; see the official site for current governance status.
+[Google](https://developers.google.com/), originally announced at Google Cloud Next 2025 with 50+ launch partners. The specification is hosted at [google-a2a.github.io/A2A](https://a2a-protocol.org/latest/) with reference implementations in the [`google-a2a`](https://github.com/google-a2a) GitHub organization. Governance has been transitioned toward an open ecosystem foundation; see the official site for current governance status.
 
 ## Status
 
@@ -156,7 +156,7 @@ Merchants surfacing capabilities to other agents decide attestation policy, iden
 
 ## References
 
-- [google-a2a.github.io/A2A](https://google-a2a.github.io/A2A/) — official specification.
+- [google-a2a.github.io/A2A](https://a2a-protocol.org/latest/) — official specification.
 - [github.com/google-a2a](https://github.com/google-a2a) — reference SDKs and samples.
 - [Google Cloud Next 2025 — A2A announcement](https://cloud.google.com/blog/products/ai-machine-learning/a2a-a-new-era-of-agent-interoperability) — original announcement.
 - [Google Agentic Commerce / AP2](https://github.com/google-agentic-commerce) — AP2 reference (payments over A2A).

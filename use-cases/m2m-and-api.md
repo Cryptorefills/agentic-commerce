@@ -158,7 +158,7 @@ The pragmatic stance for production today: support multiple identity formats and
 
 ### References
 
-- A2A protocol (Google): <https://github.com/google-agentic-commerce/A2A>
+- A2A protocol (Google): <https://github.com/a2aproject/A2A>
 - AP2 mandates: <https://github.com/google-agentic-commerce/AP2>
 - Multi-agent procurement playbook: [/agent-playbooks/multi-agent-procurement.md](../agent-playbooks/multi-agent-procurement.md)
 - Receipts and proof of purchase: [/merchant-playbooks/receipts-and-proof-of-purchase.md](../merchant-playbooks/receipts-and-proof-of-purchase.md)
@@ -189,7 +189,7 @@ Both surfaces share the same defender-side architecture. The protocol-layer mech
 
 - x402 spec: <https://x402.gitbook.io/>
 - L402 (Lightning Labs): <https://docs.lightning.engineering/the-lightning-network/l402>
-- A2A protocol (Google): <https://github.com/google-agentic-commerce/A2A>
+- A2A protocol (Google): <https://github.com/a2aproject/A2A>
 - AP2 mandates: <https://github.com/google-agentic-commerce/AP2>
 - Fewsats (L402 toolkits): <https://fewsats.com/>
 - x402 protocol page: [/protocols/x402.md](../protocols/x402.md)

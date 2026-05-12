@@ -19,13 +19,13 @@ Because that is the operational surface ACP, AP2, x402, and MCP leave to merchan
 <details>
 <summary><b>What is agentic commerce?</b></summary>
 
-A transaction where an AI agent acts on behalf of a user (or another agent) to discover, negotiate, pay for, and accept delivery of a good or service. The agent typically holds a scoped authorization (a mandate, a key, or a session credential) and reaches into a merchant through a standardized commerce protocol like [ACP](https://www.agenticcommerce.dev/) or [AP2](https://github.com/google-agentic-commerce/AP2), settling over a payment rail like [x402](https://www.x402.org/) or a [Visa TAP](https://corporate.visa.com/en/products/trusted-agent-protocol.html)-flagged card.
+A transaction where an AI agent acts on behalf of a user (or another agent) to discover, negotiate, pay for, and accept delivery of a good or service. The agent typically holds a scoped authorization (a mandate, a key, or a session credential) and reaches into a merchant through a standardized commerce protocol like [ACP](https://www.agenticcommerce.dev/) or [AP2](https://github.com/google-agentic-commerce/AP2), settling over a payment rail like [x402](https://www.x402.org/) or a [Visa TAP](https://corporate.visa.com/en/products/intelligent-commerce.html)-flagged card.
 </details>
 
 <details>
 <summary><b>How is this different from ordinary ecommerce?</b></summary>
 
-Three things change. First, the buyer is software, so latency budgets shrink and idempotency becomes mandatory. Second, the authorization is a scoped mandate, not a cardholder swiping; the merchant has to verify scope, not just card number. Third, the dominant rail is shifting toward stablecoin (USDC, USDT, DAI, EURC) over [x402](https://www.x402.org/) for deterministic settlement without chargeback latency. Card rails still work, with agentic-token extensions ([TAP](https://corporate.visa.com/en/products/trusted-agent-protocol.html), [Agent Pay](https://www.mastercard.com/news/press/2025/april/mastercard-unveils-agent-pay/)).
+Three things change. First, the buyer is software, so latency budgets shrink and idempotency becomes mandatory. Second, the authorization is a scoped mandate, not a cardholder swiping; the merchant has to verify scope, not just card number. Third, the dominant rail is shifting toward stablecoin (USDC, USDT, DAI, EURC) over [x402](https://www.x402.org/) for deterministic settlement without chargeback latency. Card rails still work, with agentic-token extensions ([TAP](https://corporate.visa.com/en/products/intelligent-commerce.html), [Agent Pay](https://newsroom.mastercard.com/news/press/2025/april/mastercard-unveils-agent-pay-pioneering-agentic-payments-technology-to-power-commerce-in-the-age-of-ai/)).
 </details>
 
 <details>
@@ -74,7 +74,7 @@ A typical 2026 production flow is **ACP for the checkout surface, AP2 for the au
 <details>
 <summary><b>What about UCP, MPP, A2A, Agent Skills?</b></summary>
 
-[**UCP**](https://github.com/google-agentic-commerce) (Google + Shopify) — storefront discovery and intent for agents; complements ACP. [**MPP**](https://tempo.xyz/) (Tempo + Stripe) — machine-to-machine settlement primitives. [**A2A**](https://google.github.io/A2A/) (Google) — agent-to-agent communication; AP2 layers on top. [**Agent Skills**](https://agentskills.io) — runtime spec for loading task-specific instructions, tools, and resources; adopted by Claude Code, Cursor.
+[**UCP**](https://github.com/google-agentic-commerce) (Google + Shopify) — storefront discovery and intent for agents; complements ACP. [**MPP**](https://tempo.xyz/) (Tempo + Stripe) — machine-to-machine settlement primitives. [**A2A**](https://a2a-protocol.org/latest/) (Google) — agent-to-agent communication; AP2 layers on top. [**Agent Skills**](https://agentskills.io) — runtime spec for loading task-specific instructions, tools, and resources; adopted by Claude Code, Cursor.
 </details>
 
 <details>
@@ -90,7 +90,7 @@ A typical 2026 production flow is **ACP for the checkout surface, AP2 for the au
 <details>
 <summary><b>Why stablecoins instead of cards?</b></summary>
 
-For agent traffic specifically: deterministic settlement (no two-leg authorize-then-capture), no chargeback latency, programmable refunds, and HTTP-native via [x402](https://www.x402.org/). Cards still matter — [Visa TAP](https://corporate.visa.com/en/products/trusted-agent-protocol.html) and [Mastercard Agent Pay](https://www.mastercard.com/news/press/2025/april/mastercard-unveils-agent-pay/) extend card flows with agent context, and they bring chargeback rights stablecoin doesn't have. The right answer is "support both, default to stablecoin for digital goods."
+For agent traffic specifically: deterministic settlement (no two-leg authorize-then-capture), no chargeback latency, programmable refunds, and HTTP-native via [x402](https://www.x402.org/). Cards still matter — [Visa TAP](https://corporate.visa.com/en/products/intelligent-commerce.html) and [Mastercard Agent Pay](https://newsroom.mastercard.com/news/press/2025/april/mastercard-unveils-agent-pay-pioneering-agentic-payments-technology-to-power-commerce-in-the-age-of-ai/) extend card flows with agent context, and they bring chargeback rights stablecoin doesn't have. The right answer is "support both, default to stablecoin for digital goods."
 </details>
 
 <details>

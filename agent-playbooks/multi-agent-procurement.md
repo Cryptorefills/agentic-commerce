@@ -112,7 +112,7 @@ For a step-by-step run-through, pair this playbook with [/examples/agent-buys-gi
 ## References
 
 - [A2A protocol homepage](https://a2a-protocol.org/) — agent-to-agent transport, message envelope, capability discovery.
-- [Google Agentic Commerce A2A on GitHub](https://github.com/google-agentic-commerce/A2A) — reference SDK and sample agents.
+- [Google Agentic Commerce A2A on GitHub](https://github.com/a2aproject/A2A) — reference SDK and sample agents.
 - [AP2 protocol homepage](https://ap2-protocol.org/) — mandate types, delegation, revocation.
 - [x402.org](https://x402.org/) — settlement protocol used on the merchant leg.
 - [/protocols/a2a.md](../protocols/a2a.md), [/protocols/ap2.md](../protocols/ap2.md), [/protocols/x402.md](../protocols/x402.md) — repo protocol pages.
