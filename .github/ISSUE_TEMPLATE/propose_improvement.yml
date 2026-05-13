@@ -1,0 +1,65 @@
+name: Propose an improvement
+description: Propose a concrete change to existing content — a missing definition, a missing row in a comparison, a diagram that would replace prose, expected output in an example README, cross-links between playbooks, and similar.
+title: "[Improvement]: "
+labels:
+  - improvement
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for scoped improvements to **content that already exists** in the repository.
+
+        - For new entries (protocols, rails, articles, videos, podcasts, courses), use **Add a resource**.
+        - For renames, version bumps, or scope changes to an existing entry, use **Update an existing resource**.
+        - For dead links, use **Report a broken link**.
+        - For an operational scenario the protocols do not cover, use **Suggest a use case**.
+
+        Please review [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md) before submitting. One change per PR.
+  - type: input
+    id: file_or_section
+    attributes:
+      label: File or section being improved
+      description: Repository path of the file, optionally with a section anchor.
+      placeholder: e.g. comparison/rails-comparison.md — "Summary table"
+    validations:
+      required: true
+  - type: textarea
+    id: gap
+    attributes:
+      label: The gap
+      description: What is missing or unclear today? Describe the reader who hits the rough edge.
+      placeholder: |
+        e.g. The rails comparison table covers stablecoins, BTC, Lightning, card networks, SEPA, ACH, and FedNow, but PIX is missing. A reader evaluating Brazilian merchant flows has to leave the page to compare rail behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_change
+    attributes:
+      label: Proposed change
+      description: The concrete edit. Show the shape — what gets added, where, in what voice. If you have draft text, paste it here.
+      placeholder: |
+        Add one row to the Summary table with the existing columns (settlement speed, finality model, fee model, dispute model, dev experience). Add corresponding footnote references.
+    validations:
+      required: true
+  - type: input
+    id: public_reference
+    attributes:
+      label: Public reference
+      description: Official source backing any factual claim in the proposed change. Required when the change adds or revises a factual statement.
+      placeholder: https://www.bcb.gov.br/en/financialstability/pix_en
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Submission checklist
+      options:
+        - label: One change per PR — this proposal is a single scoped edit
+          required: true
+        - label: No marketing language in the proposed text
+          required: true
+        - label: Official source linked for any factual claim
+          required: true
+        - label: I have read CONTRIBUTING.md
+          required: true
