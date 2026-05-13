@@ -1,5 +1,5 @@
 name: Propose an improvement
-description: Propose a concrete change to existing content — a missing definition, a missing row in a comparison, a diagram that would replace prose, expected output in an example README, cross-links between playbooks, and similar.
+description: "Propose a scoped change to existing content: a missing definition, a row in a comparison, a diagram, expected output in an example README, cross-links between playbooks."
 title: "[Improvement]: "
 labels:
   - improvement
