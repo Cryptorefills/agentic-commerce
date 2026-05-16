@@ -58,7 +58,7 @@ COUNTRY=it BRAND="Amazon.it" pnpm catalog
 |---|---|---|---|
 | `manifest` (default) | `GET /.well-known/x402.json` | None | Service manifest with supported schemes, network IDs, asset address, endpoints. |
 | `catalog` | manifest + `GET /v1/brands?country_code=us` + `GET /v1/catalog?country_code=us&brand_name=Amazon.com` | None — read-only | Brand list and product list with real `price_usdc` values. |
-| `inspect-402` | catalog + `POST /v1/orders` (no signature) | None — server returns 402 | The decoded `PAYMENT-REQUIRED` envelope: scheme, network, USDC asset, atomic amount, recipient, deadline, nonce. The demo stops here. |
+| `inspect-402` | catalog + `POST /v1/orders` for the first fixed-denomination catalog item (no signature) | None — server returns 402 | The decoded `PAYMENT-REQUIRED` envelope: scheme, network, USDC asset, atomic amount, recipient, deadline, nonce. The demo stops here. |
 
 ## What's real, what's not
 
