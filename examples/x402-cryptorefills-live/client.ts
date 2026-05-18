@@ -62,13 +62,23 @@ async function runManifest(): Promise<void> {
   console.log(JSON.stringify(r.body, null, 2));
 }
 
-async function runCatalog(): Promise<void> {
+type CatalogProduct = {
+  product_id?: string;
+  product_name?: string;
+  brand_name?: string;
+  is_range?: boolean;
+  product_value_required?: boolean;
+  min_value?: number;
+  face_value_usd?: number;
+};
+
+async function runCatalog(): Promise<CatalogProduct[]> {
   await runManifest();
   banner(`brands country_code=${COUNTRY}`);
   const brandsRes = await listBrands(COUNTRY);
   if (brandsRes.status !== 200) {
     console.log(`[live] /v1/brands failed: ${brandsRes.status} ${JSON.stringify(brandsRes.body)}`);
-    return;
+    return [];
   }
   const brands = Array.isArray(brandsRes.body) ? brandsRes.body : [];
   console.log(`[live] received ${brands.length} brands. First 5:`);
@@ -78,32 +88,39 @@ async function runCatalog(): Promise<void> {
   const catRes = await getCatalog(COUNTRY, BRAND);
   if (catRes.status !== 200) {
     console.log(`[live] /v1/catalog failed: ${catRes.status} ${JSON.stringify(catRes.body)}`);
-    return;
+    return [];
   }
-  const catalog = Array.isArray(catRes.body) ? catRes.body : [];
+  const catalog = Array.isArray(catRes.body) ? catRes.body as CatalogProduct[] : [];
   console.log(`[live] received ${catalog.length} products for ${BRAND}. First 3:`);
   console.log(JSON.stringify(catalog.slice(0, 3), null, 2));
+  return catalog;
 }
 
 async function runInspect402(): Promise<void> {
-  await runCatalog();
+  const catalog = await runCatalog();
   banner("POST /v1/orders (no signature) — expecting 402 PAYMENT-REQUIRED");
 
-  // Build a minimal order body. We deliberately use placeholder fields so the
-  // server's validator is the only thing that determines whether we get 402
-  // or 400. We never submit PAYMENT-SIGNATURE.
+  const product = catalog.find((p) => p.product_id && !p.is_range && !p.product_value_required);
+  if (!product?.product_id) {
+    console.log("[live] no fixed-denomination product found; cannot inspect 402 safely");
+    return;
+  }
+
+  // Build a minimal order body from the live catalog response above. We never
+  // submit PAYMENT-SIGNATURE, so this stops at the 402 challenge.
   const orderBody = {
     items: [
       {
-        // The product_id below is illustrative. In production this would be a
-        // real product_id from the catalog response above.
-        product_id: "00000000-0000-0000-0000-000000000000",
+        product_id: product.product_id,
         quantity: 1,
+        beneficiary_account: "demo@example.com",
       },
     ],
     email: "demo@example.com",
     country_code: COUNTRY,
   };
+
+  console.log(`[live] selected product: ${product.product_name ?? product.product_id}`);
 
   const res = await postOrderForInspection(orderBody);
   console.log(`[live] HTTP ${res.status}`);
@@ -133,7 +150,10 @@ async function main(): Promise<void> {
   console.log(`[live] mode=${MODE} country=${COUNTRY} brand=${BRAND}`);
   console.log(`[live] rate_limit=${UPSTREAM_INFO.rateLimitRps}rps timeout=${UPSTREAM_INFO.timeoutMs}ms`);
   if (MODE === "manifest") return runManifest();
-  if (MODE === "catalog") return runCatalog();
+  if (MODE === "catalog") {
+    await runCatalog();
+    return;
+  }
   if (MODE === "inspect-402") return runInspect402();
 }
 
